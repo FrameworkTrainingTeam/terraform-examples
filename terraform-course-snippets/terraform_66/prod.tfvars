@@ -1,2 +1,2 @@
 environment          = "prod"
-password_min_numeric = 4
+password_min_numeric = 6

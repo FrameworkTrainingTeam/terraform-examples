@@ -5,7 +5,7 @@ terraform {
     organization = "frameworktraining"
 
     workspaces {
-      prefix  = "tftraining-"
+      prefix = "tftraining-"
     }
   }
 }
@@ -25,7 +25,7 @@ variable "environment" {
 }
 
 variable "password_min_numeric" {
-  description = "Min number of numberic chars in password"
+  description = "Min number of numeric chars in password"
   type        = number
   default     = 4
 
@@ -73,6 +73,6 @@ resource "null_resource" "sleep" {
   }
 
   triggers = {
-    always_run    = timestamp()
+    always_run = timestamp()
   }
 }

@@ -12,12 +12,10 @@ resource "random_string" "password" {
 
 resource "null_resource" "sleep" {
   provisioner "local-exec" {
-    command     = "sleep 10"
-    interpreter = ["PowerShell", "-Command"]
-    # interpreter = ["pwsh", "-Command"]
+    command = "sleep 10"
   }
 
   triggers = {
-    always_run    = timestamp()
+    always_run = timestamp()
   }
 }

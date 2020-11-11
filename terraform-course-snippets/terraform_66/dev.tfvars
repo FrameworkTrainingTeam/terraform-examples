@@ -1,2 +1,2 @@
 environment          = "dev"
-password_min_numeric = 1
+password_min_numeric = 4

@@ -15,7 +15,7 @@ variable "environment" {
 }
 
 variable "password_min_numeric" {
-  description = "Min number of numberic chars in password"
+  description = "Min number of numeric chars in password"
   type        = number
   default     = 4
 
