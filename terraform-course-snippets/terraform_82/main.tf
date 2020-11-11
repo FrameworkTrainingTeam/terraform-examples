@@ -34,6 +34,6 @@ data "azurerm_resource_group" "existing_resource_group" {
 
 output "existing_resource_group_location" {
   description = "Location of existing resource group"
-  value   = data.azurerm_resource_group.existing_resource_group.location
+  value       = data.azurerm_resource_group.existing_resource_group.location
 }
 

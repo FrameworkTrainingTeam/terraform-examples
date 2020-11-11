@@ -34,7 +34,7 @@ data "azurerm_resource_group" "existing_resource_group" {
 
 output "existing_resource_group_location" {
   description = "Location of existing resource group"
-  value   = data.azurerm_resource_group.existing_resource_group.location
+  value       = data.azurerm_resource_group.existing_resource_group.location
 }
 
 data "terraform_remote_state" "existing_state_file" {
@@ -51,6 +51,6 @@ data "terraform_remote_state" "existing_state_file" {
 
 output "existing_state_file_password" {
   description = "Password value in existing state file"
-  value   = data.terraform_remote_state.existing_state_file.outputs.password_value
+  value       = data.terraform_remote_state.existing_state_file.outputs.password_value
 }
 

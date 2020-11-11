@@ -7,6 +7,6 @@ resource "azurerm_resource_group" "resource_group" {
 
   lifecycle {
     # prevent_destroy = true
-    ignore_changes  = []
+    ignore_changes = []
   }
 }
